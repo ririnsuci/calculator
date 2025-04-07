@@ -1,0 +1,116 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Latar belakang */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #a6c6f0, #56CCF2);
+}
+
+/* Kotak kalkulator */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Dropdown */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #2F80ED;
+}
+
+/* Input box */
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #2F80ED;
+}
+
+/* Tombol Hitung */
+.hitung-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #27AE60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hitung-btn:hover {
+    background: #219653;
+    transform: scale(1.05);
+}
+
+/* Hasil */
+.hasil-container {
+    margin-top: 20px;
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+#hasil {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F80ED;
+    margin-top: 5px;
+    transition: 0.3s;
+}
